@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit Convertors</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.3/components/footers/footer-6/assets/css/footer-6.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <script src="scriptjs\index.js"></script>
+  <link rel="shortcut icon" href="img\preview.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css\style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+</head>
+
+<body>
+<div class="background">
+  <nav class="navbar navbar-expand-lg">
+    <img class="nav-icon" src="img\preview.png" alt="">
+    <span class="navbar-brand"> Unit Convertors </span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home<span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="\Aboutus\aboutus.html">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="true">
+            Units
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="Length">Length</a>
+            <a class="dropdown-item" href="Temprature">Temprature</a>
+            <a class="dropdown-item" href="Area">Area</a>
+            <a class="dropdown-item" href="Volume">Volume</a>
+            <a class="dropdown-item" href="Weigth">Weigth</a>
+            <a class="dropdown-item" href="Time">Time</a>
+          </div>
+        </li>
+    </div>
+  </nav>
+
+
+        <div class="title">
+        Units Convertors
+        </div>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#LENGTH" type="button"
+              role="tab" aria-controls="LENGTH" aria-selected="true">LENGTH</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#TEMPRATURE" type="button"
+              role="tab" aria-controls="TEMPRATURE" aria-selected="false">TEMPRATURE</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#AREA" type="button" role="tab"
+              aria-controls="AREA" aria-selected="false">AREA</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#VOLUME" type="button" role="tab"
+              aria-controls="VOLUME" aria-selected="false">VOLUME</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#WEIGHT" type="button" role="tab"
+              aria-controls="WEIGHT" aria-selected="true">WEIGHT</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#Time" type="button" role="tab"
+              aria-controls="Time" aria-selected="true">TIME</button>
+          </li>
+        </ul>
+
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="LENGTH" role="tabpanel" aria-labelledby="length-tab">
+
+                <div class="from-units">
+                  <h2>From <img class="from-arrow" src="img\png-transparent-arrow-arrow-angle-triangle-black-thumbnail-removebg-preview1.png" alt=""></h2>
+                  <div class="from1"> 
+                  <select name="LENGTH" id="from" class="from">
+                    <option value="meter">Meter</option>
+                    <option value="kilometer">KiloMeter</option>
+                    <option value="centimeter">CentiMeter</option>
+                    <option value="milimeter">MiliMeter</option>
+                    <option value="micrometer">MicroMeter</option>
+                    <option value="nanometer">NanoMeter</option>
+                    <option value="mile">Mile</option>
+                    <option value="yard">Yard</option>
+                    <option value="foot">Foot</option>
+                    <option value="inch">Inch</option>
+                    <option value="lightyear">Light Year</option>
+                  </select>
+                  
+                  <input type="text" id="fv"  class="from">
+                  
+                </div>
+                <div class="error" id="error"></div>
+                </div>
+
+
+            <div class="to-units">
+                <h2 class="t">To <img class="to-arrow" src="img\png-transparent-arrow-arrow-angle-triangle-black-thumbnail-removebg-preview.png" alt=""></h2>
+              <div class="to1">
+              <select name="LENGTH" id="to"  class="to">
+                <option value="meter">Meter</option>
+                <option value="kilometer">KiloMeter</option>
+                <option value="centimeter">CentiMeter</option>
+                <option value="milimeter">MiliMeter</option>
+                <option value="micrometer">MicroMeter</option>
+                <option value="nanometer">NanoMeter</option>
+                <option value="mile">Mile</option>
+                <option value="yard">Yard</option>
+                <option value="foot">Foot</option>
+                <option value="inch">Inch</option>
+                <option value="lightyear">Light Year</option>
+              </select>
+
+              <input type="text" id="ov"  class="to">
+            </div>
+            </div>
+
+            <button class="convert" onclick="length()">CONVERT</button>
+            <button class="clear" onclick="len()">Reset</button>
+
+          </div>
+          
+
+
+          <div class="tab-pane fade" id="TEMPRATURE" role="tabpanel" aria-labelledby="Temprature-tab">
+
+            <div class="from-units">
+            <h2>From <img class="from-arrow" src="img\png-transparent-arrow-arrow-angle-triangle-black-thumbnail-removebg-preview1.png" alt=""></h2>
+            <div class="from1"> 
+              <select name="TEMPRATURE" id="temp-select1" class="from">
+                <option value="Celsius">Celsius</option>
+                <option value="Fahrenheit">Fahrenheit</option>
+                <option value="Kelvin">Kelvin</option>
+                <option value="Rankine">Rankine</option>
+              </select>
+
+
+              <input type="text" id="input"  class="from">
+          
+            </div>
+            <div class="error" id="error1"></div>
+            </div>
+          
+          <div class="to-units">
+            <h2 class="t">To  <img class="to-arrow" src="img\png-transparent-arrow-arrow-angle-triangle-black-thumbnail-removebg-preview.png" alt=""></h2>
+            <div class="to1">
+            <select name="TEMPRATURE" id="temp-select2"  class="to">
+              <option value="Celsius">Celsius</option>
+              <option value="Fahrenheit">Fahrenheit</option>
+              <option value="Kelvin">Kelvin</option>
+              <option value="Rankine">Rankine</option>
+            </select>
+
+            <input type="text" id="output"  class="to">
+          </div>
+          </div>
+            <button class="convert" onclick="temprature()">CONVERT</button>
+            <button class="clear" onclick="temp()">Reset</button>
+
+
+          </div>
+
+          <div class="tab-pane fade" id="AREA" role="tabpanel" aria-labelledby="Area-tab">
+
+            <div class="from-units">
+              <h2>From <img class="from-arrow" src="img\png-transparent-arrow-arrow-angle-triangle-black-thumbnail-removebg-preview1.png" alt=""></h2>
+              <div  class="from1">
+                <select name="AREA" id="area-select1" class="from">
+                  <option value="square-meter">Square-Meter</option>
+                  <option value="square-kilometer">Square-Kilometer</option>
+                  <option value="square-centimeter">Square-Centimeter</option>
+                  <option value="square-milimeter">Square-MiliMeter</option>
+                  <option value="square-micrometer">Square-MicroMeter</option>
+                  <option value="hectare">Hectare</option>
+                  <option value="acre">Acre</option>
+                  <option value="square-mile">Square-Mile</option>
+                  <option value="square-yard">Square-Yard</option>
+                  <option value="square-foot">Square-foot</option>
+                  <option value="square-inch">Square-inch</option>
+                </select>
+
+
+              <input type="text" id="areain" class="from">
+              
+
+              </div>
+              <div class="error" id="error2"></div>
+            </div>
+
+          <div class="to-units">
+              <h2 class="t">To  <img class="to-arrow" src="img\png-transparent-arrow-arrow-angle-triangle-black-thumbnail-removebg-preview.png" alt=""></h2>
+              <div class="to1">
+                <select name="AREA" id="area-select2"  class="to">
+                  <option value="square-meter">Square-Meter</option>
+                  <option value="square-kilometer">Square-Kilometer</option>
+                  <option value="square-centimeter">Square-Centimeter</option>
+                  <option value="square-milimeter">Square-MiliMeter</option>
+                  <option value="square-micrometer">Square-MicroMeter</option>
+                  <option value="hectare">Hectare</option>
+                  <option value="acre">Acre</option>
+                  <option value="square-mile">Square-Mile</option>
+                  <option value="square-yard">Square-Yard</option>
+                  <option value="square-foot">Square-foot</option>
+                  <option value="square-inch">Square-inch</option>
+                </select>
+
+                <input type="text" id="areaout"  class="to">
+              </div>
+            </div>
+            <button class="convert" onclick="area()">CONVERT</button>
+            <button class="clear" onclick="area1()">Reset</button>
+
+
+
+          </div>
+
+          <div class="tab-pane fade" id="VOLUME" role="tabpanel" aria-labelledby="Area-tab">
+
+              <div class="from-units">
+                <h2>From <img class="from-arrow" src="img\png-transparent-arrow-arrow-angle-triangle-black-thumbnail-removebg-preview1.png" alt=""></h2>
+                <div class="from1">
+                <select name="VOLUME" id="from-volume"  class="from">
+                  <option value="cubic-meter">Cubic Meter</option>
+                  <option value="cubic-kilometer">Cubic kilometer</option>
+                  <option value="cubic-centimeter">Cubic centimeter</option>
+                  <option value="cubic-millimeter">Cubic milimeter</option>
+                  <option value="liter">litter</option>
+                  <option value="milliliter">milliliter</option>
+                  <option value="us-gallon">Us gallon</option>
+                  <option value="us-quart">Us Quart</option>
+                  <option value="us-pint">Us pint</option>
+                  <option value="us-cup">Us cup</option>
+                  <option value="us-fluidounce">Us fluid once</option>
+                  <option value="us-tablespoon">Us table spoon </option>
+                  <option value="us-teaspoon">Us teaspoon</option>
+                  <option value="imperial-gallon">imperial gallon</option>
+                  <option value="imperial-quart">imperial Quart</option>
+                  <option value="imperial-print">imperial print</option>
+                  <option value="imperial-fluidounce">imperial fluid once</option>
+                  <option value="imperial-tablespoon">imperial tablespoon</option>
+                  <option value="imperial-teaspoon">imperial teaspoon</option>
+                  <option value="cubic-mile">cubic mile</option>
+                  <option value="cubic-yard">cubic yard</option>
+                  <option value="cubic-foot">cubic foot</option>
+                  <option value="cubic-inch">cubic inch</option>
+                </select>
+
+
+                <input type="text" id="input-volume"  class="from">
+              
+              </div>
+              <div class="error" id="error3"> </div>
+              </div>
+
+              <div class="to-units">
+                <h2 class="t">To  <img class="to-arrow" src="img\png-transparent-arrow-arrow-angle-triangle-black-thumbnail-removebg-preview.png" alt=""></h2>
+                <div class="to1">
+                  <select name="VOLUME" id="to-volume"   class="to">
+                    <option value="cubic-meter">Cubic Meter</option>
+                    <option value="cubic-kilometer">Cubic kilometer</option>
+                    <option value="cubic-centimeter">Cubic centimeter</option>
+                    <option value="cubic-millimeter">Cubic milimeter</option>
+                    <option value="liter">litter</option>
+                    <option value="milliliter">milliliter</option>
+                    <option value="us-gallon">Us gallon</option>
+                    <option value="us-quart">Us Quart</option>
+                    <option value="us-pint">Us print</option>
+                    <option value="us-cup">Us cup</option>
+                    <option value="us-fluidounce">Us fluid once</option>
+                    <option value="us-tablespoon">Us table spoon </option>
+                    <option value="us-teaspoon">Us teaspoon</option>
+                    <option value="imperial-gallon">imperial gallon</option>
+                    <option value="imperial-quart">imperial Quart</option>
+                    <option value="imperial-print">imperial print</option>
+                    <option value="imperial-fluidounce">imperial fluid once</option>
+                    <option value="imperial-tablespoon">imperial tablespoon</option>
+                    <option value="imperial-teaspoon">imperial teaspoon</option>
+                    <option value="cubic-mile">cubic mile</option>
+                    <option value="cubic-yard">cubic yard</option>
+                    <option value="cubic-foot">cubic foot</option>
+                    <option value="cubic-inch">cubic inch</option>
+                  </select>
+
+                  <input type="text" id="ov-volume"  class="to" >
+
+                </div>
+              </div>    
+            <button class="convert" onclick="volume()">CONVERT</button>
+            <button class="clear" onclick="reset()">Reset</button>
+
+
+          </div>
+
+
+          <div class="tab-pane fade" id="WEIGHT" role="tabpanel" aria-labelledby="WEIGHT-tab">
+            <div class="from-units">
+              <h2>From <img class="from-arrow" src="img\png-transparent-arrow-arrow-angle-triangle-black-thumbnail-removebg-preview1.png" alt=""></h2>
+              <div class="from1">
+                  <select name="WEIGHT" id="select1"  class="from">
+                    <option value="kilogram">kilogram</option>
+                    <option value="gram">gram</option>
+                    <option value="miligram">miligram</option>
+                    <option value="metric-ton">metric-ton</option>
+                    <option value="long-ton">long-ton</option>
+                    <option value="short-ton">short-ton</option>
+                    <option value="pound">pound</option>
+                    <option value="carrat">carrat</option>
+                    <option value="amu">Atomic mass unit</option>
+                  </select>
+
+
+                  <input type="text" id="inputweight" class="from">
+                
+              </div>    
+              <div class="error" id="error4"> </div>
+            </div>
+
+            <div class="to-units">
+              <h2 class="t">To  <img class="to-arrow" src="img\png-transparent-arrow-arrow-angle-triangle-black-thumbnail-removebg-preview.png" alt=""></h2>
+              <div class="to1">
+                <select name="WEIGHT" id="select2" class="to">
+
+                  <option value="kilogram">kilogram</option>
+                  <option value="gram">gram</option>
+                  <option value="miligram">miligram</option>
+                  <option value="metric-ton">metric-ton</option>
+                  <option value="long-ton">long-ton</option>
+                  <option value="short-ton">short-ton</option>
+                  <option value="pound">pound</option>
+                  <option value="carrat">carrat</option>
+                  <option value="amu">Atomic mass unit</option>
+                </select>
+
+                <input type="text" id="ov-weight"  class="to">
+                
+              </div>
+            </div>
+
+                <button class="convert" onclick="weight()">CONVERT</button>
+                <button class="clear" onclick="reset()">Reset</button>
+
+         </div>
+
+        <div class="tab-pane fade" id="Time" role="tabpanel" aria-labelledby="Time-tab">
+          <div class="from-units">
+            <h2>From <img class="from-arrow" src="img\png-transparent-arrow-arrow-angle-triangle-black-thumbnail-removebg-preview1.png" alt=""></h2>
+            <div class="from1">
+                <select name="Time" id="time1"  class="from">
+                  <option value="second">Second</option>
+                  <option value="millisecond">Milli-second</option>
+                  <option value="microsecond">Micro-second</option>
+                  <option value="nanosecond">Pano-second</option>
+                  <option value="picosecond">Pico-second</option>
+                  <option value="minute">Minute</option>
+                  <option value="hour">Hour</option>
+                  <option value="day">Day</option>
+                  <option value="week">Week</option>
+                  <option value="month">Month</option>
+                  <option value="year">Year</option>
+                </select>
+
+                <input type="text" id="timev" class="from">
+              
+            </div>    
+            <div class="error" id="error5"> </div>
+          </div>
+
+          <div class="to-units">
+            
+            <h2 class="t">To  <img class="to-arrow" src="img\png-transparent-arrow-arrow-angle-triangle-black-thumbnail-removebg-preview.png" alt=""></h2>
+
+            <div class="to1">
+              <select name="Time" id="time2" class="to">
+                <option value="second">Second</option>
+                <option value="millisecond">Milli-second</option>
+                <option value="microsecond">Micro-second</option>
+                <option value="nanosecond">Pano-second</option>
+                <option value="picosecond">Pico-second</option>
+                <option value="minute">Minute</option>
+                <option value="hour">Hour</option>
+                <option value="day">Day</option>
+                <option value="week">Week</option>
+                <option value="month">Month</option>
+                <option value="year">Year</option>
+              </select>
+
+              <input type="text" id="timeout"  class="to">
+              
+              </div>
+            </div>
+
+              <button class="convert" onclick="time()">CONVERT</button>
+              <button class="clear" onclick="reset()">CLEAR</button>
+        </div>
+     </div>
+
+      <footer class="text-center bg-body-tertiary">
+         
+        <div class="container pt-4">
+         
+          <section class="mb-4">
+           
+            <a data-mdb-ripple-init="" class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.facebook.com/skshahzadkhan.baloch?mibextid=ZbWKwL" role="button" data-mdb-ripple-color="dark"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+            </svg></a>
+          
+            <a data-mdb-ripple-init="" class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.instagram.com/shahzads_0728?igsh=aWNqOTJuNDJiMG11" role="button" data-mdb-ripple-color="dark"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.582 0 8c0 3.54 2.29 6.533 5.47 7.59.4.074.547-.174.547-.386 0-.19-.007-.693-.01-1.36-2.232.484-2.695-1.077-2.695-1.077-.363-.92-.887-1.165-.887-1.165-.725-.496.055-.486.055-.486.803.057 1.225.825 1.225.825.714 1.22 1.87.868 2.327.664.072-.517.278-.868.506-1.068-1.773-.2-3.634-.887-3.634-3.943 0-.872.312-1.587.823-2.144-.083-.203-.36-1.015.078-2.117 0 0 .67-.215 2.2.82.64-.178 1.32-.267 2-.27.68.003 1.36.092 2 .27 1.52-1.035 2.19-.82 2.19-.82.44 1.102.16 1.914.08 2.117.51.557.82 1.272.82 2.144 0 3.064-1.863 3.742-3.642 3.938.287.246.54.733.54 1.478 0 1.068-.01 1.927-.01 2.192 0 .214.145.464.55.385C13.71 14.53 16 11.537 16 8c0-4.418-3.582-8-8-8zm-.332 12.282c-.594.023-1.125-.225-1.483-.66-.358-.435-.511-.99-.444-1.593.05-.614.296-1.122.73-1.514-.46-.077-.922-.155-1.384-.232-.73-.745-1.354-1.686-1.835-2.742-.54-1.12-.816-2.388-.827-3.76h1.926c.006.707.107 1.346.298 1.916.192.57.462 1.046.805 1.432.344.385.764.67 1.27.854.48.169.977.254 1.484.252.512-.004 1.007-.088 1.483-.252.505-.184.925-.47 1.269-.854.344-.385.614-.861.806-1.432.191-.57.292-1.209.298-1.916h1.927c-.012 1.372-.287 2.64-.828 3.76-.48 1.056-1.104 1.997-1.835 2.742-.462.077-.924.155-1.385.232-.463.077-.924.155-1.384.232.433.392.68.9.731 1.514.067.603-.086 1.158-.443 1.593-.357.435-.889.683-1.483.66z"/>
+            </svg>
+            </a>
+           
+            <a data-mdb-ripple-init="" class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button" data-mdb-ripple-color="dark">  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+              <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+            </svg></a>
+
+            
+            <a data-mdb-ripple-init="" class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.linkedin.com/in/shahzadbaloch0728" role="button" data-mdb-ripple-color="dark"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+            </svg></i></a>
+           
+            <a data-mdb-ripple-init="" class="btn btn-link btn-floating btn-lg text-body m-1" href="https://github.com/Shahzad0728" role="button" data-mdb-ripple-color="dark"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.582 0 8c0 3.54 2.29 6.533 5.47 7.59.4.074.547-.174.547-.386 0-.19-.007-.693-.01-1.36-2.232.484-2.695-1.077-2.695-1.077-.363-.92-.887-1.165-.887-1.165-.725-.496.055-.486.055-.486.803.057 1.225.825 1.225.825.714 1.22 1.87.868 2.327.664.072-.517.278-.868.506-1.068-1.773-.2-3.634-.887-3.634-3.943 0-.872.312-1.587.823-2.144-.083-.203-.36-1.015.078-2.117 0 0 .67-.215 2.2.82.64-.178 1.32-.267 2-.27.68.003 1.36.092 2 .27 1.52-1.035 2.19-.82 2.19-.82.44 1.102.16 1.914.08 2.117.51.557.82 1.272.82 2.144 0 3.064-1.863 3.742-3.642 3.938.287.246.54.733.54 1.478 0 1.068-.01 1.927-.01 2.192 0 .214.145.464.55.385C13.71 14.53 16 11.537 16 8c0-4.418-3.582-8-8-8z"/>
+            </svg>
+            </a>
+          </section>
+          <span class="text1">Devloper Shahzad Ali</span>
+         
+        </div>
+        
+
+        
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2024 Copyright:
+        </div>
+      </footer>
+
+
+    
+ 
+</div>
+</body>
+
+</html>

@@ -1,0 +1,234 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    font-family: "Roboto",sans-serif;
+}
+.nav-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.navbar-brand {
+    margin-left: 10px;
+}
+
+.navbar-brand {
+    font-size: x-large;
+}
+.navbar {
+    font-size: x-large;
+}
+.background{
+    width: 100%;
+    height: 100%;
+    background-image:url("");
+    background-repeat: no-repeat;
+}
+
+.title{
+    font-size: xx-large;
+    text-align: center;
+    font-family: "Roboto",sans-serif;
+    font-weight: bold;
+}
+
+
+.nav {
+    margin-top: 15px;
+    margin-left: 100px;
+    font-size:large;
+    font-weight: 200px;
+    font-weight: bold;
+    
+}
+
+.nav-item >button {
+    color: black;
+    font-family: "Roboto",sans-serif;
+}
+
+
+.from-units{
+
+    display: flex;
+    margin-left: 100px;
+    margin-top: 30px;
+    width:70%;
+
+}
+.from-units >h2 {
+    font-family: "Roboto",sans-serif;
+    font-weight: bold;
+}
+
+
+.to-units {
+    display: flex;
+    margin-left: 100px;
+    margin-top: 30px;
+    width:70%;
+
+}
+.to-units >h2 {
+    font-family: "Roboto",sans-serif;
+    font-weight: bolder;
+}
+.from-arrow{
+    width:50px;
+    margin-left: 10px;
+    height: 40px;
+}
+
+.to-arrow{
+    width:50px;
+    margin-left:50px;
+    height: 40px;
+}
+ 
+.from1 {
+    margin-left:100px;
+    margin-top: 8px;
+}
+
+.from1 > select{
+    width: 150px;
+    height:30px;
+    font-family: "Roboto",sans-serif;
+    font-size: large;
+}
+
+.from1 >input {
+    width: 200px;
+    height:30px;
+    margin-left:5px;
+}
+
+.to1 {
+    margin-left: 100px;
+    margin-top: 8px;
+}
+
+.to1 > select{
+    width: 150px;
+    height:30px;
+    font-family: "Roboto",sans-serif;
+    font-size: large;
+}
+
+.to1 >input {
+    width: 200px;
+    height:30px;
+    margin-left:5px;
+}
+
+
+.convert  {
+    margin-left: 270px;
+    margin-top: 30px;
+    width:150px;
+    height:40px;
+    font-size: large;
+    border: 2px #141E46 solid;
+    border-radius: 40px ;
+    font-family: "Roboto",sans-serif;
+    font-weight: bolder;
+    color: white;
+    background-color:#006633;
+}
+.clear {
+    width:150px;
+    height:40px;
+    font-size: large;
+    border: 2px #141E46 solid;
+    border-radius: 40px ;
+    font-family: "Roboto",sans-serif;
+    font-weight: bolder;
+    color: white;
+    background-color:#006633;
+}
+
+.error {
+    font-family: "Roboto",sans-serif;
+    margin: 8px;
+    margin-left: 20px;
+    padding-top: 2px; 
+    padding-left: 20px;
+    width: 300px;
+    height: 30px;
+    color: red;
+    font-weight: bolder;
+}
+.text1 {
+    font-weight: bolder;
+}
+
+.text-center{
+    font-weight: bold;
+}
+footer {
+    margin-top:50px;
+}
+
+@media only screen and (max-width: 480px) {
+    .nav {
+        margin-left: 10px;
+        font-size: small;
+    }
+    .from-units, .to-units {
+        margin-left: 10px;
+        width: 90%;
+    }
+    .from1 > select, .to1 > select, .from1 > input, .to1 > input {
+        margin-left: 10px;
+    }
+    .convert, .clear {
+        margin-left: 10px;
+    }
+    .error {
+        margin-left: 8px;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav {
+        margin-left: 5%;
+    }
+    .from-units, .to-units {
+        margin-left: 5%;
+    }
+    .from1 > select, .to1 > select, .from1 > input, .to1 > input {
+        width: 60%;
+    }
+    .convert, .clear {
+        width: 60%;
+    }
+    .error {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .nav {
+        margin-left: 0;
+        font-size: medium;
+    }
+    .from-units, .to-units {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+    .from1 > select, .to1 > select, .from1 > input, .to1 > input {
+        width: 80%;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    .convert, .clear {
+        width: 80%;
+    }
+    .error {
+        width: 100%;
+    }
+}
